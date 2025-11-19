@@ -12,8 +12,7 @@ version of the docs (e.g. `origin/stable/4.2.x`).
 
 ### Dependencies
 
-Set up a python virtualenv and install the dependencies from `requirements.txt`. Note that you'll need `pandoc` installed as well, which on
-Ubuntu can be installed with `sudo apt install pandoc`.
+Set up a python virtualenv and install the dependencies from `requirements.txt`.
 
 ### Settings
 
