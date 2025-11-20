@@ -151,7 +151,8 @@ def load(source):
                 if not filepath.startswith("releases") and name.endswith(".txt") and not filepath.startswith("_theme"):
                     doc_files.append(filepath)
             elif source == "laravel":
-                doc_files.append(filepath)
+                if filepath.endswith(".md"):
+                    doc_files.append(filepath)
 
     if source == "django":
         doc_files = [x for x in doc_files if x not in ['index.txt', 'contents.txt', 'requirements.txt']]
