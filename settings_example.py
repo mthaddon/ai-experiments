@@ -3,8 +3,14 @@ CHROMA_DB_DIRECTORY="/home/ubuntu/repos/ai-experiments/chroma_db"
 # The models to use for chat and embeddings (generating integers from text for
 # later querying in the Chroma DB).
 MODELS = {
-    "chat": "deepseek-r1:1.5b",
-    "embeddings": "nomic-embed-text:latest",
+    "chat": {
+        "name": "deepseek-r1:1.5b",
+        "url": "http://localhost:11434",
+    },
+    "embeddings": {
+        "name": "nomic-embed-text:latest",
+        "url": "http://localhost:11434",
+    },
 }
 # The sources to use for ingestion and querying.
 SOURCES = {

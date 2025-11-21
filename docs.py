@@ -32,8 +32,8 @@ logger = logging.getLogger(__name__)
 
 def _get_vector_store(source):
     embeddings = OllamaEmbeddings(
-        model=MODELS["embeddings"],
-        base_url="http://localhost:11434",
+        model=MODELS["embeddings"]["name"],
+        base_url=MODELS["embeddings"]["url"],
     )
 
     collection_name = SOURCES[source]["collection_name"]
@@ -114,8 +114,8 @@ def ask(source):
     prog = SOURCES[source]["name"]
     version = SOURCES[source]["version"]
     chat = ChatOllama(
-        model=MODELS["chat"],
-        base_url="http://localhost:11434",
+        model=MODELS["chat"]["name"],
+        base_url=MODELS["chat"]["url"],
         temperature=0,
     )
     agent = create_agent(
