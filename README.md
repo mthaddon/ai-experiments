@@ -19,7 +19,7 @@ Set up a python virtualenv and install the dependencies from `requirements.txt`.
 
 ### Settings
 
-Copy `settings_example.py` to `setting.py` and set all the variables as appropriate.
+Copy `settings_example.py` to `settings.py` and set all the variables as appropriate.
 
 ## Run
 
